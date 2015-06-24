@@ -1,0 +1,12 @@
+::res://::1435171033
+icon.png::ImageTexture::1435167258::
+::res://_graphics::1435168005
+dirt.png::ImageTexture::1435167205::
+::res://_scenes::1435171337
+new_scene.scn::PackedScene::1435171337::
+::res://_scripts::1435172511
+LevelGeneration.gd::GDScript::1435172511::
+::res://_tiles::1435169287
+dirt.tex::ImageTexture::1435168071::texture_2d<>_graphics/dirt.png<>bcd2f00aca589f307de6a44524c89d8b<>1435167205
+tileset.res::TileSet::1435169287::
+tileset_scene.scn::PackedScene::1435169112::
