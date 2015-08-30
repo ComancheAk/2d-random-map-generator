@@ -1,17 +1,11 @@
-
 extends TileMap
 
-# member variables here, example:
-# var a=2
-# var b="textvar"
-var maxCellsX = 20
-var maxCellsY = 12
-var maxCells = 20
-var curCellX
-var curCellY
 var startCellX
 var startCellY
+var maxCells = 20
 var n = 0
+var curCellX
+var curCellY
 var nextCell
 
 func _ready():
@@ -21,7 +15,10 @@ func _ready():
 	set_cell(startCellX, startCellY,randi() % 3,false,false,false)
 	curCellX = startCellX
 	curCellY = startCellY
-	while n < maxCells:
+	set_process(true)
+
+func _process(delta):
+	if n < maxCells:
 		nextCell = randi() % 3
 		if nextCell == 0:
 			set_cell(curCellX, curCellY-1,randi() % 3,false,false,false)
@@ -39,8 +36,4 @@ func _ready():
 			set_cell(curCellX-1, curCellY,randi() % 3,false,false,false)
 			curCellX -= 1
 			n += 1
-			
 	
-	pass
-
-
